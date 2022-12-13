@@ -5,6 +5,7 @@ class Tokenizer():
         self._n =Normalizer.verify_sentence(self)
     def tokenizer(self)->list:
         self._tokens = self._n.split()
+        
         # print(self._tokens)
         return self._tokens
 t=Tokenizer()
