@@ -16,7 +16,7 @@ class Search():
     
     def search(self)->list:
         t=Tokenizer()
-        self._tokens=t.tokenizer()
+        self._tokens=t.tokenizer
         for i in self._nouns:
             for j in self._tokens:
                 if j==i:
