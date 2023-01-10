@@ -9,12 +9,8 @@ class Tokenizer():
         self._nlp = spacy.load('en_core_web_sm')
         self._doc= self._nlp(self._n)
         for tokens in self._doc:
-            self._tokens.append(str(tokens))
-        return self._tokens
-        # return (string)
-        # return str(self._tokens)
-        
-        # self._tokens = self._doc.split()
-        # return self._tokens
+            self._tokens.append(str(tokens)) # i get all the objects, 
+            #set them to strings and insert them in my list of tokens
+        return self._tokens 
 t=Tokenizer()
-t.tokenizer()
+t.tokenizer() #calling this function returns the list of tokens into a desired list or variable
