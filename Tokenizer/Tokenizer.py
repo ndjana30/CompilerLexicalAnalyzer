@@ -10,7 +10,7 @@ class Tokenizer():
         self._doc= self._nlp(self._n)
         for tokens in self._doc:
             self._tokens.append(str(tokens))
-        return (self._tokens)
+        return self._tokens
         # return (string)
         # return str(self._tokens)
         
